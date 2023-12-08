@@ -64,9 +64,9 @@ There are no recovery installation instructions for this discontinued device.
 {% include {{ path }} %}
 {% endif %}
 
-## Installing PixelExperience from recovery
+## Installing Pixel Extended from recovery
 
-1. Download the [PixelExperience installation package](https://download.pixelexperience.org/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [Pixel Extended installation package](https://{{ site.baseurl }}/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 2. If you are not in recovery, reboot into recovery:
     * {{ device.recovery_boot }}
     {% if device.vendor == "LG" %}

@@ -4,8 +4,8 @@
 ## Introduction
 
 These instructions will hopefully assist you to start with a stock {{ device.vendor }} {{ device.name }}, unlock the bootloader (if necessary), and then download
-the required tools as well as the very latest source code for PixelExperience (based on Google’s Android operating system) for your device. Using these, you can build both
-a PixelExperience installation zip and a PixelExperience Recovery image and install them on your device.
+the required tools as well as the very latest source code for Pixel Extended (based on Google’s Android operating system) for your device. Using these, you can build both
+a Pixel Extended installation zip and a Pixel Extended Recovery image and install them on your device.
 
 It is difficult to say how much experience is necessary to follow these instructions. While this guide is certainly not for the extremely uninitiated,
 these steps shouldn’t require a PhD in software development either. Some readers will have no difficulty and breeze through the steps easily.
@@ -34,7 +34,7 @@ Any recent 64-bit version should work great, but the latest Long Term Support (L
 
 Let's begin!
 
-## Build PixelExperience and PixelExperience Recovery
+## Build Pixel Extended and Pixel Extended Recovery
 
 {% include alerts/note.html content="You only need to do these steps once. If you have already prepared your build environment and downloaded the source code,
 skip to [Prepare the device-specific code](#prepare-the-device-specific-code)" %}
@@ -90,7 +90,7 @@ mkdir -p ~/bin
 mkdir -p ~/android/pe
 ```
 
-The `~/bin` directory will contain the git-repo tool (commonly named "repo") and the `~/android/pe` directory will contain the source code of PixelExperience.
+The `~/bin` directory will contain the git-repo tool (commonly named "repo") and the `~/android/pe` directory will contain the source code of Pixel Extended.
 
 ### Install the `repo` command
 
@@ -122,7 +122,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-### Initialize the PixelExperience source repository
+### Initialize the Pixel Extended source repository
 
 The following branches can be used to build for the {{ device.vendor }} {{ device.name }}:
 
@@ -139,7 +139,7 @@ Enter the following to initialize the repository:
 
 ```
 cd ~/android/pe
-repo init -u https://github.com/PixelExperience/manifest -b branch_name
+repo init -u https://github.com/PixelExtended/manifest -b branch_name
 ```
 
 ### Download the source code
@@ -152,7 +152,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 {% include alerts/note.html content="This may take a while, depending on your internet speed. Go and have a beer/coffee/tea/nap in the meantime!" %}
 
-{% include alerts/tip.html content="The `repo sync` command is used to update the latest source code from PixelExperience. Remember it, as you may want to
+{% include alerts/tip.html content="The `repo sync` command is used to update the latest source code from Pixel Extended. Remember it, as you may want to
 do it every few days to keep your code base fresh and up-to-date." %}
 
 ### Prepare the device-specific code
@@ -252,14 +252,14 @@ There you'll find all the files that were created. The two files of more interes
 
 {% if device.is_ab_device %}
 {% if device.has_recovery_partition %}
-1. `recovery.img`, which is the PixelExperience recovery image.
+1. `recovery.img`, which is the Pixel Extended recovery image.
 {% else %}
-1. `boot.img`, which is the PixelExperience boot image, and contains the recovery-ramdisk.
+1. `boot.img`, which is the Pixel Extended boot image, and contains the recovery-ramdisk.
 {% endif %}
 {% else %}
-1. `recovery.img`, which is the PixelExperience recovery image.
+1. `recovery.img`, which is the Pixel Extended recovery image.
 {% endif %}
-2. A zip file whose name starts with 'PixelExperience_', which is the PixelExperience
+2. A zip file whose name starts with 'PixelExtended_', which is the Pixel Extended
 installer package.
 
 ### Success! So... what's next?
@@ -269,4 +269,4 @@ hopefully you've learned a bit on the way and had some fun too.
 
 ## To get assistance
 
-* [Telegram group](https://t.me/pixelexperiencechat)
+* [Telegram group](https://t.me/PixelExtended)
