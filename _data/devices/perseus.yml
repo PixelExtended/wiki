@@ -1,6 +1,6 @@
 architecture: arm64
 battery:
-  capacity: 3800
+  capacity: 3200
   removable: false
   tech: Li-Po
 bluetooth:
@@ -9,65 +9,64 @@ bluetooth:
   spec: '5'
 cameras:
 - flash: LED
-  info: 12 MP (wide)
+  info: 12 MP
 - flash: LED
-  info: 12 MP (telephoto)
+  info: 12 MP
+- flash: LED
+  info: 24 MP
 - flash: None
-  info: 24 MP (wide)
-- flash: None
-  info: 2 MP (depth sensor)
-codename: andromeda
-cpu: Kryo 485
+  info: 2 MP
+codename: perseus
+cpu: Kryo 385
 cpu_cores: '8'
-cpu_freq: 1 x 2.84 GHz + 3 x 2.42 GHz + 4 x 1.78 GHz
+cpu_freq: 4 x 2.8 GHz + 4 x 1.7 GHz
 deprecated: false
 deprecated_versions:
-- twelve
-- twelve_plus
 dimensions:
-  depth: 9.4 mm (0.37 in)
+  depth: 8.5 mm (0.33 in)
   height: 157.9 mm (6.22 in)
   width: 74.7 mm (2.94 in)
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
   Keep holding both buttons until the word "FASTBOOT" appears on the screen, then
   release.
-gpu: Adreno 640
+gpu: Adreno 630
 install_method: fastboot_xiaomi
 maintainers:
-- Nicholas Magill
-name: Mi MIX 3 5G
+- AidanWarner97
+name: Mi Mix 3
 network:
 - 2G GSM
 - 2G CDMA
 - 3G UMTS
 - 4G LTE
-- 5G NR
 peripherals:
 - A-GPS
 - Accelerometer
 - Compass
+- Dual SIM
+- FM radio
 - Fingerprint reader
 - GLONASS
 - GPS
 - Gyroscope
 - Light sensor
 - NFC
-- Ultrasound proximity sensor
+- Proximity sensor
+- Qi Wireless Charging
 - USB OTG
-ram: 6 GB
+ram: 6/8 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Power</kbd>.
   Keep holding both buttons until the "MI" logo appears on the screen, then release.
-release: 2019-05
+release: 2018-10-01
 screen:
   density: 403
   resolution: 1080x2340
   size: 162.306 mm (6.39 in)
   technology: AMOLED
-soc: Qualcomm SM8150 Snapdragon 855
-storage: 64/128 GB UFS2.1
+soc: Qualcomm SSM845 Snapdragon 845
+storage: 128/256 GB
 uses_custom_recovery: true
 vendor: Xiaomi
 versions:
-- thirteen
-- thirteen_plus
+- thunder
 wifi: 802.11 a/b/g/n/ac, Dual-band, Wi-Fi Direct, Wi-Fi Display, DLNA, Hotspot
