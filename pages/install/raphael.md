@@ -1,6 +1,6 @@
 ---
 sidebar: home_sidebar
-title: Install PixelExperience on raphael
+title: Install Pixel Extended on raphael
 folder: install
 permalink: /devices/raphael/install/
 device: raphael
